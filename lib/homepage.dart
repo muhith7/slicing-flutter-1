@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tugas3/detailview.dart';
 
+import 'login.dart';
+
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
 
@@ -18,7 +20,12 @@ class Homepage extends StatelessWidget {
           SizedBox(
             height: 48,
             width: 48,
-            child: IconButton(onPressed: () {}, icon: const Icon(Icons.account_circle_rounded)),
+            child: IconButton(onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => LoginPage()),
+              );
+            }, icon: const Icon(Icons.account_circle_rounded)),
           )
         ],
       ),
