@@ -46,8 +46,8 @@ class DetailView extends StatelessWidget {
                 "Title",
                 style: TextStyle(fontWeight: FontWeight.w400, fontSize: 20),
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8.0),
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 8.0),
                 child: Text(
                   "Published date",
                   style: TextStyle(
@@ -57,12 +57,12 @@ class DetailView extends StatelessWidget {
                 ),
               ),
               Text(content.text1),
-              SizedBox(height: 32),
+              const SizedBox(height: 32),
               Text(content.text2),
               Row(
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.only(top: 8.0, bottom: 8),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 8.0, bottom: 8),
                     child: Text(
                       "Other Post",
                       style: TextStyle(
@@ -75,7 +75,7 @@ class DetailView extends StatelessWidget {
                     height: 48,
                     width: 48,
                     child: IconButton(
-                      icon: Icon(Icons.arrow_forward, color: Colors.black),
+                      icon: const Icon(Icons.arrow_forward, color: Colors.black),
                       onPressed: () {
                         // Tambahkan fungsi navigasi atau lainnya di sini
                       },
@@ -95,7 +95,7 @@ class DetailView extends StatelessWidget {
                           child: Image.asset('assets/card/card2.png'),
                         ),
                       ),
-                      Column(
+                      const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -116,7 +116,7 @@ class DetailView extends StatelessWidget {
                                 style: TextStyle(fontWeight: FontWeight.w400, fontSize: 11,
                                     color: Colors.grey),
                               ),Padding(
-                                padding: const EdgeInsets.only(right: 4.0,left: 4),
+                                padding: EdgeInsets.only(right: 4.0,left: 4),
                                 child: Text(
                                   "•",
                                   style: TextStyle(fontWeight: FontWeight.w400, fontSize: 11,
@@ -145,7 +145,7 @@ class DetailView extends StatelessWidget {
                             child: Image.asset('assets/card/card2.png'),
                           ),
                         ),
-                        Column(
+                        const Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
@@ -166,7 +166,7 @@ class DetailView extends StatelessWidget {
                                   style: TextStyle(fontWeight: FontWeight.w400, fontSize: 11,
                                       color: Colors.grey),
                                 ),Padding(
-                                  padding: const EdgeInsets.only(right: 4.0,left: 4),
+                                  padding: EdgeInsets.only(right: 4.0,left: 4),
                                   child: Text(
                                     "•",
                                     style: TextStyle(fontWeight: FontWeight.w400, fontSize: 11,
@@ -194,7 +194,7 @@ class DetailView extends StatelessWidget {
                           child: Image.asset('assets/card/card2.png'),
                         ),
                       ),
-                      Column(
+                      const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -215,7 +215,7 @@ class DetailView extends StatelessWidget {
                                 style: TextStyle(fontWeight: FontWeight.w400, fontSize: 11,
                                     color: Colors.grey),
                               ),Padding(
-                                padding: const EdgeInsets.only(right: 4.0,left: 4),
+                                padding: EdgeInsets.only(right: 4.0,left: 4),
                                 child: Text(
                                   "•",
                                   style: TextStyle(fontWeight: FontWeight.w400, fontSize: 11,
